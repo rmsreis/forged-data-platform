@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORGED - Data Platform</title>
+  <link rel="stylesheet" href="styles/theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="forged-nav">
+      <div class="brand">
+        <div class="logo-text">F</div>
+        <span>FORGED</span>
+      </div>
+      <ul>
+        <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fas fa-database"></i> Data Explorer</a></li>
+        <li><a href="#"><i class="fas fa-robot"></i> AI Tools</a></li>
+        <li><a href="#"><i class="fas fa-microscope"></i> Instruments</a></li>
+        <li><a href="#"><i class="fas fa-book"></i> Publications</a></li>
+        <li><a href="#"><i class="fas fa-graduation-cap"></i> Training</a></li>
+        <li><a href="#"><i class="fas fa-user"></i> User Portal</a></li>
+        <li><a href="#" class="notification-dot"><i class="fas fa-question-circle"></i> Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="user-controls glow-on-hover">
+      <h2>User Controls</h2>
+      
+      <div class="user-profile">
+        <div class="profile-avatar">
+          <div class="user-avatar-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="profile-info">
+          <p class="user-name">Dr. Jane Smith</p>
+          <p class="user-affiliation"><i class="fas fa-university"></i> Northwestern University</p>
+          <p>Access Level: Premium <span class="badge badge-premium">PRO</span></p>
+        </div>
+      </div>
+      
+      <div class="credit-balance">
+        <i class="fas fa-coins"></i> Credit Balance: 1250 pts
+      </div>
+      
+      <div class="data-contribution">
+        <h3>Data Contribution</h3>
+        <button class="button-primary">
+          <i class="fas fa-upload"></i> Upload New Dataset
+        </button>
+      </div>
+      
+      <div class="filter-section">
+        <h3>Data Filters</h3>
+        
+        <div class="dropdown-menu">
+          <p><i class="fas fa-atom"></i> Material: Metal Alloys <i class="fas fa-chevron-down"></i></p>
+          <div class="dropdown-content">
+            <a href="#">Metal Alloys</a>
+            <a href="#">Ceramics</a>
+            <a href="#">Polymers</a>
+            <a href="#">Composites</a>
+          </div>
+        </div>
+        
+        <div class="dropdown-menu">
+          <p><i class="fas fa-tachometer-alt"></i> Property: Mechanical <i class="fas fa-chevron-down"></i></p>
+          <div class="dropdown-content">
+            <a href="#">Mechanical</a>
+            <a href="#">Thermal</a>
+            <a href="#">Electrical</a>
+            <a href="#">Optical</a>
+          </div>
+        </div>
+        
+        <div class="dropdown-menu">
+          <p><i class="fas fa-cogs"></i> Process: Additive Mfg <i class="fas fa-chevron-down"></i></p>
+          <div class="dropdown-content">
+            <a href="#">Additive Mfg</a>
+            <a href="#">Casting</a>
+            <a href="#">Forging</a>
+            <a href="#">Heat Treatment</a>
+          </div>
+        </div>
+        
+        <div class="dropdown-menu">
+          <p><i class="fas fa-calendar-alt"></i> Date: Last 6 months <i class="fas fa-chevron-down"></i></p>
+          <div class="dropdown-content">
+            <a href="#">Last 6 months</a>
+            <a href="#">Last year</a>
+            <a href="#">Last 2 years</a>
+            <a href="#">All time</a>
+          </div>
+        </div>
+        
+        <div class="dropdown-menu">
+          <p><i class="fas fa-share-alt"></i> Sharing: Open <i class="fas fa-chevron-down"></i></p>
+          <div class="dropdown-content">
+            <a href="#">Open</a>
+            <a href="#">Limited</a>
+            <a href="#">Private</a>
+          </div>
+        </div>
+        
+        <button class="button-primary">
+          <i class="fas fa-filter"></i> Apply Filters
+        </button>
+      </div>
+      
+      <div class="saved-searches">
+        <h3>Saved Searches</h3>
+        <ul>
+          <li><i class="fas fa-star"></i> Superalloy Creep Data</li>
+          <li><i class="fas fa-star"></i> Ti-6Al-4V AM Parameters</li>
+          <li class="add-search"><i class="fas fa-plus-circle"></i> Add new search</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="data-explorer glow-on-hover">
+      <h2>Data Explorer <span class="badge">3 datasets</span></h2>
+      <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Search across material systems, properties, processes...">
+        <button class="button-primary search-button"><i class="fas fa-search"></i> Search</button>
+      </div>
+      
+      <div class="data-visualization">
+        <div class="data-card">
+          <div class="card-badge">Featured</div>
+          <h3>Ti-6Al-4V Mechanical Properties</h3>
+          <p><i class="fas fa-cogs"></i> Process: Additive Manufacturing - LPBF</p>
+          <p><i class="fas fa-chart-bar"></i> Properties: Yield Strength, UTS, Elongation</p>
+          <p><i class="fas fa-lock-open"></i> Access: Open</p>
+          <div class="card-meta">
+            <span><i class="fas fa-download"></i> 128 downloads</span>
+            <span><i class="fas fa-star"></i> 4.8</span>
+          </div>
+          <button class="button-primary"><i class="fas fa-table"></i> View Data</button>
+        </div>
+        
+        <div class="data-card">
+          <h3>Aluminum Alloys Heat Treatment</h3>
+          <p><i class="fas fa-cogs"></i> Process: Heat Treatment Variations</p>
+          <p><i class="fas fa-chart-bar"></i> Properties: Hardness, Microstructure</p>
+          <p><i class="fas fa-lock"></i> Access: Limited</p>
+          <div class="card-meta">
+            <span><i class="fas fa-download"></i> 85 downloads</span>
+            <span><i class="fas fa-star"></i> 4.2</span>
+          </div>
+          <button class="button-primary"><i class="fas fa-table"></i> View Data</button>
+        </div>
+        
+        <div class="data-card">
+          <div class="card-badge">New</div>
+          <h3>Steel Corrosion Resistance</h3>
+          <p><i class="fas fa-cogs"></i> Process: Surface Treatments</p>
+          <p><i class="fas fa-chart-bar"></i> Properties: Corrosion Rate, Surface Analysis</p>
+          <p><i class="fas fa-lock-open"></i> Access: Open</p>
+          <div class="card-meta">
+            <span><i class="fas fa-download"></i> 42 downloads</span>
+            <span><i class="fas fa-star"></i> 4.5</span>
+          </div>
+          <button class="button-primary"><i class="fas fa-table"></i> View Data</button>
+        </div>
+      </div>
+      
+      <div class="recommendations">
+        <h3><i class="fas fa-lightbulb"></i> Recommended for You</h3>
+        <ul>
+          <li><i class="fas fa-database"></i> Dataset: Nickel Superalloys High Temp Performance</li>
+          <li><i class="fas fa-project-diagram"></i> Correlation: LPBF Parameters vs. Porosity</li>
+          <li><i class="fas fa-flask"></i> Experimental Gap: Fatigue Data for AM Ti-6Al-4V at Elevated Temp</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="ai-tools-panel glow-on-hover">
+      <h2><i class="fas fa-robot"></i> AI-Enhanced Tools</h2>
+      
+      <div class="ai-tools-container">
+        <div class="ai-tool-card">
+          <div class="tool-icon"><i class="fas fa-brain"></i></div>
+          <h3>Property Prediction</h3>
+          <p>Predict mechanical properties based on composition and processing parameters.</p>
+          <div class="tool-meta">
+            <span><i class="fas fa-bolt"></i> 50 credits</span>
+            <span><i class="fas fa-star"></i> 4.9</span>
+          </div>
+          <button class="button-primary"><i class="fas fa-play"></i> Launch Tool</button>
+        </div>
+        
+        <div class="ai-tool-card">
+          <div class="tool-icon"><i class="fas fa-flask"></i></div>
+          <h3>Experimental Design</h3>
+          <p>Optimize your next experiments based on accumulated knowledge and uncertainties.</p>
+          <div class="tool-meta">
+            <span><i class="fas fa-bolt"></i> 75 credits</span>
+            <span><i class="fas fa-star"></i> 4.7</span>
+          </div>
+          <button class="button-primary"><i class="fas fa-play"></i> Launch Tool</button>
+        </div>
+        
+        <div class="ai-tool-card">
+          <div class="tool-icon"><i class="fas fa-project-diagram"></i></div>
+          <h3>Model Discovery</h3>
+          <p>Browse ML models relevant to your material class or property of interest.</p>
+          <div class="tool-meta">
+            <span><i class="fas fa-bolt"></i> 40 credits</span>
+            <span><i class="fas fa-star"></i> 4.5</span>
+          </div>
+          <button class="button-primary"><i class="fas fa-play"></i> Launch Tool</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <div class="logo-text-small">F</div>
+        FORGED Data Platform
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Training</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Collaborate</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 FORGED Data Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Dropdown functionality
+      const dropdowns = document.querySelectorAll('.dropdown-menu');
+      
+      dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function() {
+          this.classList.toggle('active');
+          
+          // Close other dropdowns
+          dropdowns.forEach(other => {
+            if (other !== dropdown && other.classList.contains('active')) {
+              other.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // Add fade-in animation to cards
+      const cards = document.querySelectorAll('.data-card, .ai-tool-card');
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('fade-in');
+        }, index * 100);
+      });
+
+      // Simulate search functionality
+      const searchBar = document.querySelector('.search-bar');
+      const searchButton = document.querySelector('.search-button');
+      
+      searchButton.addEventListener('click', function() {
+        if (searchBar.value.trim() !== '') {
+          // Add loading spinner
+          this.innerHTML = '<span class="loading-spinner"></span> Searching...';
+          
+          // Simulate search delay
+          setTimeout(() => {
+            // Reset button
+            this.innerHTML = '<i class="fas fa-search"></i> Search';
+            
+            // Show notification
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.innerHTML = `<i class="fas fa-search"></i> Search results for "${searchBar.value}"</div>`;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+              notification.classList.add('show');
+            }, 100);
+            
+            setTimeout(() => {
+              notification.classList.remove('show');
+              setTimeout(() => {
+                notification.remove();
+              }, 500);
+            }, 3000);
+            
+            // Clear search
+            searchBar.value = '';
+          }, 1500);
+        }
+      });
+
+      // Button effects
+      const buttons = document.querySelectorAll('.button-primary');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', function() {
+          this.classList.add('clicked');
+          
+          setTimeout(() => {
+            this.classList.remove('clicked');
+          }, 300);
+        });
+      });
+
+      // Add tooltip functionality
+      const cardBadges = document.querySelectorAll('.card-badge');
+      
+      cardBadges.forEach(badge => {
+        badge.classList.add('tooltip');
+        const tooltipText = document.createElement('span');
+        tooltipText.className = 'tooltip-text';
+        tooltipText.textContent = badge.textContent === 'Featured' ? 
+          'Highly rated dataset' : 'Added in the last 7 days';
+        badge.appendChild(tooltipText);
+      });
+      
+      // Add glow effect to cards on hover
+      const dataCards = document.querySelectorAll('.data-card');
+      dataCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.classList.add('active-glow');
+        });
+        card.addEventListener('mouseleave', function() {
+          this.classList.remove('active-glow');
+        });
+      });
+    });
+  </script>
+
+  <style>
+    /* Additional styles for interactive elements */
+    .dropdown-menu {
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 15px;
+      margin-top: 5px;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+    }
+    
+    .dropdown-content a {
+      color: var(--text-color);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.2s;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+    
+    .dropdown-menu.active .dropdown-content {
+      display: block;
+      animation: fadeIn 0.3s;
+    }
+    
+    .dropdown-menu i.fa-chevron-down {
+      transition: transform 0.3s;
+      float: right;
+      margin-top: 5px;
+    }
+    
+    .dropdown-menu.active i.fa-chevron-down {
+      transform: rotate(180deg);
+    }
+    
+    .card-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: var(--highlight-color);
+      color: var(--primary-dark);
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 0.7rem;
+      font-weight: bold;
+      z-index: 1;
+      box-shadow: 0 0 10px var(--glow-highlight);
+    }
+    
+    .card-meta, .tool-meta {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      font-size: 0.8rem;
+      color: var(--primary-color);
+    }
+    
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 15px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15), 0 0 20px var(--glow-color);
+      z-index: 1000;
+      transform: translateY(-100px);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .notification.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .logo-text {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-right: 10px;
+    }
+    
+    .logo-text-small {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-right: 8px;
+    }
+    
+    .add-search {
+      color: var(--primary-light);
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    
+    .add-search:hover {
+      color: var(--primary-color);
+    }
+    
+    .button-primary.clicked {
+      transform: scale(0.95);
+    }
+    
+    .active {
+      font-weight: bold;
+      color: var(--highlight-color) !important;
+    }
+    
+    /* Animation for cards */
+    .fade-in {
+      animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Active glow effect */
+    .active-glow {
+      box-shadow: 0 0 25px var(--glow-color), 0 0 10px var(--glow-highlight) !important;
+    }
+    
+    /* Glow on hover effect */
+    .glow-on-hover {
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .glow-on-hover:hover {
+      box-shadow: 0 0 25px var(--glow-color), 0 0 10px var(--glow-highlight);
+    }
+    
+    .ai-tools-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .ai-tool-card {
+      margin: 20px;
+    }
+  </style>
+</body>
+</html>
